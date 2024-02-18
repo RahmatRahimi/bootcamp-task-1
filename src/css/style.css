@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+/* Root variable ... */
+:root {
+  --color-primary: #219f95;
+  --color-secondary: #234894;
+  --color-textDateOfRequest: #696969;
+  --color-heading: #1e1e1e;
+  --color-countOfUploadedFiles: #afcedd;
+  --color-white: #fff;
+}
+html {
+  font-family: Vazirmatn;
+  font-size: 62.5%;
+}
+body,
+* {
+  font-family: Vazirmatn;
+}
+/* task bootcamp 1402 */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 640px) {
+  .container {
+    width: 620px;
+  }
+  .main-content {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .main-content {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 980px;
+  }
+  .main-content {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+  .main-content {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
+.heading {
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 2rem 0 8rem 0;
+}
+.main-content {
+  margin-top: 6rem;
+  gap: 4rem;
+}
+.usersProfile {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 4rem;
+  border-radius: 1.6rem;
+  margin-bottom: 8rem;
+}
+.userProfile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countOfUploadedFiles {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-countOfUploadedFiles);
+  color: var(--color-secondary);
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textUploadDocuments {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 2rem;
+  padding-left: 14rem;
+}
+.dateOfRequest {
+  color: var(--color-textDateOfRequest);
+  font-size: 1.5rem;
+}
+.membershipRequest {
+  color: var(--color-heading);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 2.5rem 0;
+}
+.idRequest {
+  color: #696969;
+  font-size: 1.2rem;
+}
+.imag {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.8rem;
+}
+.userName {
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-left: 6rem;
+}
+
+.btnViewRequest {
+  width: 15rem;
+  height: 7rem;
+  border-radius: 0.8rem;
+  outline: 0;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.6rem;
+}
